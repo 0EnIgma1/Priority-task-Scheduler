@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Priority Task Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    
+    <h1>Priority Task Scheduler</h1>
+    <div class="paragraph-container">
+        <p>Priority Task Scheduler is an application that allows you to track your pending tasks based on their Priorities
+            I framed 5 priority levels to classify the tasks, so that I can identify on which task my focus and time should be spent on</p>
+        </div>
+    <div>
+        <h3 align="center">Priority 5</h3>
+    <table class="table-color-1">
+        <tr>
+            <th style="width: 10%;">ID</th>
+                <th style="width: 40%;">Task</th>
+                <th style="width: 20%;">Priority</th>
+                <th style="width: 30%;">Actions</th>
+        </tr>
+        {% for task1 in tasks_1 %}
+        <tr>
+            <td>{{ task1[0] }}</td>
+            <td>{{ task1[1] }}</td>
+            <td>{{ task1[2] }}</td>
+            <td>
+                <a href="/update/{{ task1[0] }}" class="update-button">Update</a>
+                <a href="/delete/{{ task1[0] }}" class="delete-button">Completed</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table> 
+</div>
+<div>
+    <h3 align="center">Priority 4</h3>
+    <table class="table-color-2">
+        <tr>
+            <th style="width: 10%;">ID</th>
+                <th style="width: 40%;">Task</th>
+                <th style="width: 20%;">Priority</th>
+                <th style="width: 30%;">Actions</th>
+        </tr>
+        {% for task2 in tasks_2 %}
+        <tr>
+            <td>{{ task2[0] }}</td>
+            <td>{{ task2[1] }}</td>
+            <td>{{ task2[2] }}</td>
+            <td>
+                <a href="/update/{{ task2[0] }}" class="update-button">Update</a>
+                <a href="/delete/{{ task2[0] }}" class="delete-button">Completed</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div >
+    <h3 align="center">Priority 3</h3>
+    <table class="table-color-3">
+        <tr>
+            <th style="width: 10%;">ID</th>
+            <th style="width: 40%;">Task</th>
+            <th style="width: 20%;">Priority</th>
+            <th style="width: 30%;">Actions</th>
+        </tr>
+        {% for task in tasks_3 %}
+        <tr>
+            <td>{{ task[0] }}</td>
+            <td>{{ task[1] }}</td>
+            <td>{{ task[2] }}</td>
+            <td>
+                <a href="/update/{{ task[0] }}" class="update-button">Update</a>
+                <a href="/delete/{{ task[0] }}" class="delete-button">Completed</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table> 
+</div>
+<div >
+    <h3 align="center">Priority 2</h3>
+    <table class="table-color-4">
+        <tr>
+            <th style="width: 10%;">ID</th>
+            <th style="width: 40%;">Task</th>
+            <th style="width: 20%;">Priority</th>
+            <th style="width: 30%;">Actions</th>
+        </tr>
+        {% for task in tasks_4 %}
+        <tr>
+            <td>{{ task[0] }}</td>
+            <td>{{ task[1] }}</td>
+            <td>{{ task[2] }}</td>
+            <td>
+                <a href="/update/{{ task[0] }}" class="update-button">Update</a>
+                <a href="/delete/{{ task[0] }}" class="delete-button">Completed</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table> 
+</div>
+<div >
+    <h3 align="center">Priority 1</h3>
+    <table class="table-color-5">
+        <tr>
+            <th style="width: 10%;">ID</th>
+            <th style="width: 40%;">Task</th>
+            <th style="width: 20%;">Priority</th>
+            <th style="width: 30%;">Actions</th>
+        </tr>
+        {% for task in tasks_5 %}
+        <tr>
+            <td>{{ task[0] }}</td>
+            <td>{{ task[1] }}</td>
+            <td>{{ task[2] }}</td>
+            <td>
+                <a href="/update/{{ task[0] }}" class="update-button">Update</a>
+                <a href="/delete/{{ task[0] }}" class="delete-button">Completed</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>  
+</div>
+    <div class="center-button">
+        <a href="/add" class="add-button">Add Task</a>
+    </div>
+    <div>
+        <table style="width: 30%;">
+            <tr>
+                <th style="width: 10%;">Priority</th>
+                <th style="width: 40%;">Task Deadline</th>
+            </tr>
+            <tr style="background-color: #ff9c9c;">
+                <td>5</td>
+                <td> < 5 days</td>
+            </tr>
+            <tr style="background-color: #ffdf80;">
+                <td>4</td>
+                <td> < 15 days</td>
+            </tr>
+            <tr style="background-color: #b8ff9e;">
+                <td>3</td>
+                <td> < 30 days</td>
+            </tr>
+            <tr style="background-color: #a6d8f5;">
+                <td>2</td>
+                <td> < 60 days</td>
+            </tr>
+            <tr style="background-color: #cea7ff;">
+                <td>1</td>
+                <td> > 60 days</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+    </div>
+    <p>Created by Naveen</p>
+</body>
+</html>

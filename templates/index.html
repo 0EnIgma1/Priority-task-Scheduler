@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Priority Task Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Priority Task Scheduler</h1>
+    <h2 align='center'>Add Task</h2>
+    <form action = "/save" method="POST">  
+        <table>  
+            <tr>
+                <td>
+                    Task</td><td><input type="text" name="Task">
+                    </td>
+                </tr>  
+            <tr>
+                <td>
+                    Priority</td><td><input type="number" name="Priority" min='1', max='5', step='1'>
+                    </td>
+                </tr>  
+            <tr>
+                <td class = "center-button">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>  
+        </table>  
+        </form>
+        <div>
+            <table style="width: 30%;">
+                <tr>
+                    <th style="width: 10%;">Priority</th>
+                    <th style="width: 40%;">Task Deadline</th>
+                </tr>
+                <tr style="background-color: #ff9c9c;">
+                    <td>5</td>
+                    <td> < 5 days</td>
+                </tr>
+                <tr style="background-color: #ffdf80;">
+                    <td>4</td>
+                    <td> < 15 days</td>
+                </tr>
+                <tr style="background-color: #b8ff9e;">
+                    <td>3</td>
+                    <td> < 30 days</td>
+                </tr>
+                <tr style="background-color: #a6d8f5;">
+                    <td>2</td>
+                    <td> < 60 days</td>
+                </tr>
+                <tr style="background-color: #cea7ff;">
+                    <td>1</td>
+                    <td> > 60 days</td>
+                </tr>
+            </table>
+        </div>  
+</body>
+</html>

@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.update-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #1a3199;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #23620c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.priority-section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.priority-section h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.priority-section table {
+    width: 100%;
+    
+    margin-top: 10px;
+}
+
+.priority-section th, .priority-section td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.priority-section th {
+    background-color: #f2f2f2;
+}
+
+.priority-section a {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.table-color-1 {
+    background-color: #ff9c9c; /* Light Pink */
+}
+
+.table-color-2 {
+    background-color: #ffdf80; /* Light Yellow */
+}
+
+.table-color-3 {
+    background-color: #b8ff9e; /* Light Green */
+}
+
+.table-color-4 {
+    background-color: #a6d8f5; /* Light Rose */
+}
+
+.table-color-5 {
+    background-color: #cea7ff; /* Light Grey */
+}
+
+.paragraph-container {
+    text-align: center; /* Center-align the paragraph */
+    margin: 20px auto; /* Add margin for spacing */
+    max-width: 800px; /* Limit the maximum width of the paragraph */
+}
+
+
+/* Style for centered bullet point list */
+.centered-list {
+    list-style-type: disc; /* Use bullet points */
+    text-align: left; /* Align list items to the left */
+    margin: 0 auto; /* Center the list */
+    max-width: 600px; /* Limit the width of the list */
+    padding-left: 200px; /* Add some left padding for bullet alignment */
+}
+
